@@ -1,0 +1,21 @@
+﻿/* styles.css */
+
+.fancy-text {
+    font-family: 'Your Fancy Font', sans-serif; /* Replace with your preferred font */
+    color: #ff00ff; /* Replace with your preferred text color */
+    /* Add any other styling you desire for fancy text */
+}
+
+.larger-text {
+    font-size: 2em; /* Adjust the font size as needed */
+}
+
+.centered-text {
+    text-align: center;
+}
+
+/* Additional styling for container elements if needed */
+.heading-container,
+.subtitle-container {
+    margin-bottom: 20px; /* Adjust spacing between heading and subtitle */
+}
