@@ -2,20 +2,33 @@
 
 .fancy-text {
     font-family: 'Your Fancy Font', sans-serif; /* Replace with your preferred font */
-    color: #ff00ff; /* Replace with your preferred text color */
+    color: #000000; /* Replace with your preferred text color */
     /* Add any other styling you desire for fancy text */
 }
 
 .larger-text {
-    font-size: 2em; /* Adjust the font size as needed */
+    font-size: 6em; /* Adjust the font size as needed */
+}
+
+.smaller-text {
+    font-size: 5em;
 }
 
 .centered-text {
     text-align: center;
 }
 
+.bold-text {
+   font-weight: 600;
+}
+
 /* Additional styling for container elements if needed */
 .heading-container,
 .subtitle-container {
-    margin-bottom: 20px; /* Adjust spacing between heading and subtitle */
+    margin-bottom: 200px; /* Adjust spacing between heading and subtitle */
+}
+
+.reservation-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
