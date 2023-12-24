@@ -32,62 +32,62 @@
         <h3 class="fancy-text larger-text centered-text bold-text">Make a reservation</h3>
     </div>
     <div class="container">
-            <div class="dropdown">
-                <button onclick="toggleDropdown()" class="dropbtn">Select Month</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">December</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button onclick="toggleDropdown()" class="dropbtn">Select Day</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">27</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button onclick="toggleDropdown()" class="dropbtn">Select Time</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">6:30 pm</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                    <a href="#">-------</a>
-                </div>
+        <div class="dropdown" style="margin-left: 10%;">
+            <button onclick="toggleDropdown()" class="dropbtn" id="dropdownButton1">Select Month</button>
+            <div id="myDropdown1" class="dropdown-content">
+                <a href="#" onclick="selectOption('Select Month', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Month', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Month', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Month', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Month', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Month', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Month', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Month', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Month', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Month', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Month', event)">-------</a>
+                <a href="#" onclick="selectOption('  December  ', event)">December</a>
             </div>
         </div>
-    <div>
-        <h3 class="fancy-text larger-text centered-text bold-text"><br><br><br><br><br></h3>
+        <div class="dropdown">
+            <button onclick="toggleDropdown()" class="dropbtn" id="dropdownButton2"> Select Day </button>
+            <div id="myDropdown2" class="dropdown-content">
+                <a href="#" onclick="selectOption(' Select Day ', event)">-------</a>
+                <a href="#" onclick="selectOption('    28th    ', event)">    28th    </a>
+                <a href="#" onclick="selectOption(' Select Day ', event)">-------</a>
+                <a href="#" onclick="selectOption(' Select Day ', event)">-------</a>
+                <a href="#" onclick="selectOption(' Select Day ', event)">-------</a>
+                <a href="#" onclick="selectOption(' Select Day ', event)">-------</a>
+                <a href="#" onclick="selectOption(' Select Day ', event)">-------</a>
+                <a href="#" onclick="selectOption(' Select Day ', event)">-------</a>
+                <a href="#" onclick="selectOption(' Select Day ', event)">-------</a>
+                <a href="#" onclick="selectOption(' Select Day ', event)">-------</a>
+            </div>
+        </div>
+        <div class="dropdown" style="margin-right: 10%;">
+            <button onclick="toggleDropdown()" class="dropbtn" id="dropdownButton3">Select Time </button>
+            <div id="myDropdown3" class="dropdown-content">
+                <a href="#" onclick="selectOption('Select Time ', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Time ', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Time ', event)">-------</a>
+                <a href="#" onclick="selectOption('   6:30 pm  ', event)">   6:30 pm  </a>
+                <a href="#" onclick="selectOption('Select Time ', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Time ', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Time ', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Time ', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Time ', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Time ', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Time ', event)">-------</a>
+                <a href="#" onclick="selectOption('Select Time ', event)">-------</a>
+            </div>
+        </div>
     </div>
-
+    <h3 class="fancy-text larger-text centered-text bold-text"><br><br><br></h3>
+    <button onclick="reserveClick()" class="reserve-btn" id="btn">Reserve</button>
+    <h3 class="fancy-text smallest-text centered-text bold-text"><br></h3>
+    <img id="goofyChef" src="images/goofy_chef.jpg" class="hidden" style="max-width: 50%; max-height: 50%; padding: 0px; margin-top: 0%; margin-left: 50%;">
+    <h4 id="goofyText" class="fancy-text smallest-text centered centered-text bold-text hidden">Jake thanks you for your reservation!</h4>
+    <h3 class="fancy-text smallest-text centered-text bold-text"><br></h3>
     <script defer src="main.js"></script>
 </body>
 </html>

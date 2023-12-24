@@ -14,12 +14,20 @@
     font-size: 5em;
 }
 
+.smallest-text {
+    font-size: 2em;
+}
+
 .centered-text {
     text-align: center;
 }
 
 .bold-text {
    font-weight: 600;
+}
+
+.centered {
+    margin-left: 40%;
 }
 
 /* Additional styling for container elements if needed */
@@ -76,7 +84,7 @@
 
 /* Style the dropdown button */
 .dropbtn {
-    background-color: #3498db;
+    background-color: #607d8b;
     color: white;
     padding: 10px;
     font-size: 16px;
@@ -88,15 +96,13 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #607d8b;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
 }
 
 /* Style the links inside the dropdown */
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -105,4 +111,38 @@
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* Style for the "Reserve" button */
+.reserve-btn {
+    display: block;
+    margin: 20px auto; /* Center the button horizontally with top and bottom margin */
+    padding: 10px 20px; /* Add padding to the button */
+    font-size: 16px; /* Set the font size */
+    background-color: #607d8b; /* Gray-blue color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer;
+}
+
+.reserve-btn:hover {
+    background-color: #455a64; /* Darker shade on hover */
+}
+
+/* Add a class with the desired background color */
+.reserved {
+    background-color: #005401 !important;
+}
+
+.reserveFailed {
+    background-color: #ff0000 !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.unhidden {
+    display: flex;
 }
