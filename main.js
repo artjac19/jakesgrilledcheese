@@ -13,7 +13,7 @@ function selectOption(option, event) {
     event.preventDefault();
     var dropdownButton;
     if (option == "Select Month" || option == "  December  ") { dropdownButton = document.getElementById("dropdownButton1"); }
-    if (option == " Select Day " || option == "    28th    ") { dropdownButton = document.getElementById("dropdownButton2"); }
+    if (option == " Select Day " || option == "    25th    ") { dropdownButton = document.getElementById("dropdownButton2"); }
     if (option == "Select Time " || option == "   6:30 pm  ") { dropdownButton = document.getElementById("dropdownButton3"); }
     dropdownButton.innerHTML = option;
     toggleDropdown(); // Close the dropdown after selecting an option
@@ -44,7 +44,7 @@ function toggleDropdown3() {
 }
 
 function reserveClick() {
-    if (document.getElementById("dropdownButton1").innerHTML == "  December  " && document.getElementById("dropdownButton2").innerHTML == "    28th    " && document.getElementById("dropdownButton3").innerHTML == "   6:30 pm  ") {
+    if (document.getElementById("dropdownButton1").innerHTML == "  December  " && document.getElementById("dropdownButton2").innerHTML == "    25th    " && document.getElementById("dropdownButton3").innerHTML == "   6:30 pm  ") {
         document.getElementById("btn").innerHTML = "Reserved!";
         document.getElementById("btn").classList.remove('reserveFailed');
         document.getElementById("btn").classList.add('reserved');
