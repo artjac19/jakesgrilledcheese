@@ -153,11 +153,11 @@
     }
 
     .smaller-text {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
     
     .smallest-text {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .container {
@@ -175,6 +175,10 @@
         text-align: center;
         line-height: 100px;
         background-image: url('images/bread.png') center/cover; /* Background image for box-1 */
+    }
+
+    .box-text {
+        font-size: 1.35em;
     }
 
     .container-dropdown {
