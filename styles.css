@@ -1,7 +1,7 @@
 ﻿/* styles.css */
 
 .fancy-text {
-    font-family: 'Your Fancy Font', sans-serif; /* Replace with your preferred font */
+    font-family: 'Arial', sans-serif; /* Replace with your preferred font */
     color: #000000; /* Replace with your preferred text color */
     /* Add any other styling you desire for fancy text */
 }
@@ -145,4 +145,39 @@
 
 .unhidden {
     display: flex;
+}
+
+@media (max-aspect-ratio: 3/2) {
+    .larger-text {
+        font-size: 2em;
+    }
+
+    .smaller-text {
+        font-size: 1.5em;
+    }
+    
+    .smallest-text {
+        font-size: 1.2em;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown {
+        margin-bottom: 5vh;
+    }
+
+    .box {
+        width: 90%; /* Adjust the width as needed */
+        height: 500px;
+        text-align: center;
+        line-height: 100px;
+        background-image: url('images/bread.png') center/cover; /* Background image for box-1 */
+    }
+
+    .container-dropdown {
+        flex-direction: row;
+    }
 }
