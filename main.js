@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () { });
 function selectOption(option, event) {
     event.preventDefault();
     var dropdownButton;
-    if (option == "Select Month" || option == "  March ") { dropdownButton = document.getElementById("dropdownButton1"); }
+    if (option == "Select Month" || option == "  March ") { dropdownButton = document.getElementById("dropdownButton1");  }
     if (option == " Select Day " || option == "   27th   ") { dropdownButton = document.getElementById("dropdownButton2"); }
     if (option == "Select Time " || option == "   6:30 pm  ") { dropdownButton = document.getElementById("dropdownButton3"); }
     dropdownButton.innerHTML = option;
